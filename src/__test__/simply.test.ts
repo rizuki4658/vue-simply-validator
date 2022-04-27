@@ -16,6 +16,7 @@ const validation = SimplyValidate(rules, state)
 
 const validating = () => {
   validation.$touch()
+  return 'Okay'
 }
 
 test('My Validation', () => {
