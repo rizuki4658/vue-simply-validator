@@ -35,23 +35,23 @@ const validating = () => {
 
 ```html
 <template>
-	<form @submit.prevent="validating">
-		<label>Name</label>
-		<input type="text" name="name" v-model="state.name"  />
-		<p v-if="validation.name.$errors.length">
-		  <span v-for="(error, n) in validation.name.$errors" :key="n">
-			{{ error }}
-		  </span>
-		</p>
-		<label>Email</label>
-		<input type="email" name="email" v-model="state.email"  />
-		<p v-if="validation.email.$errors.length">
-		  <span v-for="(error, n) in validation.email.$errors" :key="n" style="display: block;">
-			{{ error }}
-		  </span>
-		</p>
-		<button type="submit">Submit</button>
-		<button @click="resetForm" type="reset">Reset</button>
-	  </form>
+  <form @submit.prevent="validating">
+    <label>Name</label>
+    <input type="text" name="name" v-model="state.name"  />
+    <p v-if="validation.name.$errors.length">
+      <span v-for="(error, n) in validation.name.$errors" :key="n">
+      {{ error }}
+      </span>
+    </p>
+    <label>Email</label>
+    <input type="email" name="email" v-model="state.email"  />
+    <p v-if="validation.email.$errors.length">
+      <span v-for="(error, n) in validation.email.$errors" :key="n" style="display: block;">
+      {{ error }}
+      </span>
+    </p>
+    <button type="submit">Submit</button>
+    <button @click="resetForm" type="reset">Reset</button>
+  </form>
 </template>
 ```
