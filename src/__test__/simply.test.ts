@@ -19,5 +19,5 @@ const validating = () => {
 }
 
 test('My Validation', () => {
-  expect(validating()).toBe(console.log(validation))
+  expect(validating()).toBe('Okay')
 })
