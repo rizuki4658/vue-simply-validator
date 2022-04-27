@@ -9,7 +9,7 @@ Vue Simply Validator is helper for validation form, this validator only work and
 5. Email
 
 ## Install
-npm install vue-simply-validator
+`$ npm install marked`
 
 ## How to use
 ```javascript
